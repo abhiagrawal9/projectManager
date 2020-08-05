@@ -48,7 +48,7 @@ export class ProjectList extends Component<HTMLDivElement, HTMLElement>
     this.element.addEventListener('drop', this.dropHandler);
 
     projectState.addListener((projects: Project[]) => {
-      const relevantProjects = projects.filter(prj => {
+      const relevantProjects = projects.filter((prj) => {
         if (this.type === 'active') {
           return prj.status === ProjectStatus.Active;
         }

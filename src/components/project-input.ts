@@ -36,18 +36,18 @@ export class ProjectInput extends Cmp<HTMLDivElement, HTMLFormElement> {
 
     const titleValidatable: Validation.Validatable = {
       value: enteredTitle,
-      required: true
+      required: true,
     };
     const descriptionValidatable: Validation.Validatable = {
       value: enteredDescription,
       required: true,
-      minLength: 5
+      minLength: 5,
     };
     const peopleValidatable: Validation.Validatable = {
       value: +enteredPeople,
       required: true,
       min: 1,
-      max: 5
+      max: 5,
     };
 
     if (
